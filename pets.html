@@ -7,6 +7,26 @@
 </head>
 <body>
     <h1>Pick a pet by Vaishnavi Sidduri</h1>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="pets.html">Pet options</a>
+
+        <!-- Toggler button for small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsing navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="advanced.html">Advanced</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
       
 
@@ -50,16 +70,16 @@
   
     
       <div class="image-container">
-          <img src="image1.jpg" class="img-fluid"  alt="Pet 1">
-          <img src="image2.jpg" class="img-fluid"  alt="Pet 2">
-          <img src="image6.jpg" class="img-fluid"  alt="Pet 6">
+          <img src="image1.jpg" class="img-fluid"  alt="Pet 1"  width="300" height="300">
+          <img src="image2.jpg" class="img-fluid"  alt="Pet 2"  width="300" height="300">
+          <img src="image6.jpg" class="img-fluid"  alt="Pet 6"  width="300" height="300">
       </div>
   
       
       <div class="thumbnail-container">
-        <img src="image1.jpg" class="img-thumbnail" alt="Pet1">
-        <img src="image2.jpg" class="img-thumbnail" alt="Pet2">
-        <img src="image6.jpg" class="img-thumbnail" alt="Pet6">
+        <img src="image1.jpg" class="img-thumbnail" alt="Pet1"  width="300" height="300">
+        <img src="image2.jpg" class="img-thumbnail" alt="Pet2"  width="300" height="300">
+        <img src="image6.jpg" class="img-thumbnail" alt="Pet6"  width="300" height="300">
       </div>
       <div class="container mt-4">
         <table class="table table-bordered table-striped table-hover caption-top">
@@ -150,7 +170,28 @@
                 <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
                 <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
             </ul>
-            
+            </div>
+            <div class="container">
+                <h5><label>Form</label></h5>
+                <form>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="Email" placeholder="Enter your email">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="pet" class="form-label">Pet</label>
+                      <input type="text" class="form-control" id="pet" placeholder="Enter your pet">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-label" id="newsletter">
+                      <label class="form-check-label" newsletter">Sign up for newsletter?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            <br/>
+            <br/>
+            </div>
     
       
 
